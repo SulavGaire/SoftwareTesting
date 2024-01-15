@@ -11,6 +11,8 @@ const {
   BeforeAll(async function () {
     global.browser = await chromium.launch({
       headless: true,
+      // headless: false,
+      // slowMo: 1000,
     });
   });
   
