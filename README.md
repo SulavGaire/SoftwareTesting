@@ -3,4 +3,4 @@ This is for the Technergy event.
 
 # To run test
 **Command :**
-```npm run test:e2e tests/acceptance/features/fileName.feature```
+```npm run test:e2e tests/acceptance/features/*.feature```
