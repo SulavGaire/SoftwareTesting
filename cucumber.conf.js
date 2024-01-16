@@ -12,7 +12,7 @@ const {
     global.browser = await chromium.launch({
       headless: true,
       // headless: false,
-      // slowMo: 500,
+      // slowMo: 1000,
     });
   });
   
