@@ -12,3 +12,8 @@ Feature: sign up
       | Gender   | male                    |
       | Checkbox | Remember                |
     Then the user should not be on sign up page
+
+  Scenario: user clicks on cross icon or cancel button
+    Given the user has browsed to the sign up page
+    When the user clicks on the cross icon or cancel button
+    Then the user should see a sign up option on top

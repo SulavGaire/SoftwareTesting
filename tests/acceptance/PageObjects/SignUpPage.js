@@ -1,7 +1,6 @@
 const path = require("path");
 const util = require("util");
-// const baseUrl = path.dirname(__filename) + '/../../../htmlFIle'; // same as __dirname
-// const SignUpUrl = baseUrl+'/createUser.html'
+
 class SignUpPage {
   constructor() {
     this.emailBoxSelector = `//input[@name="email"]`;
@@ -12,6 +11,8 @@ class SignUpPage {
     this.genderSelector = `//input[@value="%s"]`;
     this.rememberMeSelector = `//input[@name="remember"]`;
     this.signUpButtonSelector = `//button[@type="submit"]`;
+    this.closeIconSelector = `//span[@title="Close Modal"]`;
+    this.cancelButtonSelector = `//button[@class="cancelbtn"]`;
     //launch url
     this.baseUrl = path.dirname(__filename) + "/../../../htmlFIle";
     this.SignUpUrl = this.baseUrl + "/createUser.html";
@@ -34,6 +35,15 @@ class SignUpPage {
     await page.locator(util.format(this.genderSelector, data[3])).check();
     await page.locator(this.rememberMeSelector).uncheck();
     await page.click(this.signUpButtonSelector);
+  }
+
+  async cancelPageUsingButton() {
+    await page.getByRole("button", { name: "Sign Up" }).click();
+    await page.locator(this.cancelButtonSelector).click();
+  }
+  async cancelPageUsingIcon() {
+    await page.getByRole("button", { name: "Sign Up" }).click();
+    await page.locator(this.closeIconSelector).click();
   }
 }
 module.exports = SignUpPage;
