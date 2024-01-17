@@ -1,18 +1,18 @@
 const path = require('path');
-const baseUrl = path.dirname(__filename) + '/../../../htmlFile'; // same as __dirname
+const baseUrl = path.dirname(__filename) + '/../../../htmlFile';
 
 class PowerTradePage {
     constructor() {
         // this.UOMConversionSelector = `//input[@value="Kw"]`
         this.powerTradeUrl = baseUrl + '/powerTrade_1.html';
-        this.companyNameSelector = `//input[@value="KBS Energy"]`
-        this.addressSelector = `//input[@name="addr"]`
-        this.traderSelector = `//select[@name="trader"]`
-        this.tradeDateSelector = `//input[@name="tDate"]`
-        this.deliveryDateFromSelector = `input[name="dfDate"]`
-        this.deliveryDateToSelector = `//input[@name="dtDate"]`
-        this.volumeSelector = `//input[@name="vol"]`
-        this.submitButtonSelector = `//input[@value="Submit"]`
+        this.companyNameSelector = `//input[@value="KBS Energy"]`;
+        this.addressSelector = `//input[@name="addr"]`;
+        this.traderSelector = `//select[@name="trader"]`;
+        this.tradeDateSelector = `//input[@name="tDate"]`;
+        this.deliveryDateFromSelector = `input[name="dfDate"]`;
+        this.deliveryDateToSelector = `//input[@name="dtDate"]`;
+        this.volumeSelector = `//input[@name="vol"]`;
+        this.submitButtonSelector = `//input[@value="Submit"]`;
     }
 
 
@@ -21,7 +21,7 @@ class PowerTradePage {
     }
 
     async fillingForm(dataTable) {
-        const formDetails = []
+        const formDetails = [];
         for (const formData of dataTable.raw()) {
             formDetails.push(formData[1])
         }
@@ -37,4 +37,4 @@ class PowerTradePage {
     }
 
 }
-module.exports = PowerTradePage
+module.exports = PowerTradePage;

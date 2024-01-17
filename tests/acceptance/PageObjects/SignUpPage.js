@@ -4,13 +4,12 @@ const util = require("util");
 class SignUpPage {
   constructor() {
     this.baseUrl = path.dirname(__filename) + "/../../../htmlFIle";
-    this.SignUpUrl = this.baseUrl + "/createUser.html";
+    this.signUpUrl = this.baseUrl + "/createUser.html";
 
     this.emailBoxSelector = `//input[@name="email"]`;
     this.passwordBoxSelector = `//input[@name="psw"]`;
     this.repasswordBoxSelector = `//input[@name="psw-repeat"]`;
     this.locationSelector = `//select[@name="loc"]`;
-    this.locationvalue = `//option[@value ="%s"]`;
     this.genderSelector = `//input[@value="%s"]`;
     this.rememberMeSelector = `//input[@name="remember"]`;
     this.signUpButtonSelector = `//button[@type="submit"]`;
@@ -19,7 +18,7 @@ class SignUpPage {
   }
 
   async gotoSignUpPage() {
-    await page.goto(this.SignUpUrl);
+    await page.goto(this.signUpUrl);
   }
 
   async createsAccount(dataTable) {
