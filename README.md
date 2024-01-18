@@ -18,3 +18,7 @@ https://docs.google.com/presentation/d/1LvwUOErbcXtyD8PjoLDuhAGgF8gwPBC2gtcJdVQr
 ## Google Sheet
 
 https://docs.google.com/spreadsheets/d/1xXKJxj2_yuLFBN9wTBsjm2XTVq83WfKdRHKH4zVfhBM/edit#gid=1201435715
+
+## Google docs
+
+https://docs.google.com/document/d/1Q8Am2zGOjO77fmreZNplp3fKaoLGmn70KbF7UkudDRs/edit
