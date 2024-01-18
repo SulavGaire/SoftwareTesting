@@ -17,7 +17,6 @@ Feature: power trade
       | frequency | Hourly     |
     Then the user should be able to see changes in the page url
 
-
   Scenario: user fills the form with negative value in volume field
     Given the user has opened the form
     # And the user has successfully signed up
@@ -30,10 +29,9 @@ Feature: power trade
       | uoc       | KW         |
       | volume    |       -100 |
       | frequency | Hourly     |
-    Then the user should receive an error message indicating that the volume cannot be negative
+    Then the user should receive an error message "Value must be greater than or equal to 0."
 
-
-    Scenario: user resets the form
+  Scenario: user resets the form
     Given the user has opened the form
     # And the user has successfully signed up
     When the user resets the form after submitting following inputs
@@ -46,11 +44,11 @@ Feature: power trade
       | volume    |        100 |
       | frequency | Hourly     |
     Then all form fields should be cleared
-      | address   | |
-      | trader    | |
-      | date      | |
-      | from      | |
-      | to        | |
-      | uoc       | |
-      | volume    | |
-      | frequency | |
+      | address   |  |
+      | trader    |  |
+      | date      |  |
+      | from      |  |
+      | to        |  |
+      | uoc       |  |
+      | volume    |  |
+      | frequency |  |
