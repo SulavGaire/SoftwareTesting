@@ -1,5 +1,4 @@
-const path = require('path');
-const baseUrl = path.dirname(__filename) + '/../../../htmlFile';
+const baseUrl = `${process.cwd()}` + `/htmlFIle`;
 
 class PowerTradePage {
     constructor() {
