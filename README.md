@@ -14,9 +14,9 @@ We secured `2nd runnerup position` in this `national level hackathon`.
 `npm run test:e2e tests/acceptance/features/*.feature`
 
 ## E-2-E Testing (Automation testing)
-<video width="1024" height="560" controls>
-  <source src="./Final_Video.mp4" type="video/mp4">
-</video>
+https://github.com/SulavGaire/SoftwareTesting/assets/84514548/4fd917d7-f9d2-4556-ab62-4be36be416a5
+
+
 
 ## Presentation
 
