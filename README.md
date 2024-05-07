@@ -1,15 +1,22 @@
 # SoftwareTesting
-This is for the Technergy event.
 
-## setup
- * fork and clone the repo
- * run command ```npm i``` in root directory 
-  
+This is for the Technergy event.
+We secured `2nd runnerup position` in this `national level hackathon`.
+
+## Setup
+
+- fork and clone the repo
+- run command `npm i` in root directory
 
 ### To run test
-**Command :**
-```npm run test:e2e tests/acceptance/features/*.feature```
 
+**Command :**
+`npm run test:e2e tests/acceptance/features/*.feature`
+
+## E-2-E Testing (Automation testing)
+<video width="1024" height="560" controls>
+  <source src="./Final_Video.mp4" type="video/mp4">
+</video>
 
 ## Presentation
 
